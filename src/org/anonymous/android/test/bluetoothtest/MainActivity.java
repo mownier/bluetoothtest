@@ -1,7 +1,16 @@
 package org.anonymous.android.test.bluetoothtest;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.anonymous.android.library.posthermalprinterbluetoothdriver.helpers.BluetoothUtils;
+import org.anonymous.android.library.posthermalprinterbluetoothdriver.helpers.PrintUtils;
+
 import android.app.Activity;
+import android.app.Dialog;
+import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.Menu;
@@ -30,7 +39,7 @@ public class MainActivity extends Activity {
 		});
 		
 	
-		/*
+		
 		View view = findViewById(R.id.button1);
 		view.setOnClickListener(new View.OnClickListener() {
 
@@ -92,7 +101,7 @@ public class MainActivity extends Activity {
 					.getSimpleDialogForBluetoothDeviceNames(this, deviceNames,
 							listener);
 			dialog.show();
-		}*/
+		}
 	}
 
 	@Override
